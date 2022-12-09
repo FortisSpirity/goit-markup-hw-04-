@@ -196,7 +196,7 @@ body {
 .header-content__top {
     color: #ffffff;
     font-weight: 600;
-    padding: 192px 474px 291px 474px;
+    padding: 192px 0px 192px 0px;
     text-align: center;
     background-image: url(../images/header-content__top.bg.jpg);
     background-repeat: no-repeat;
@@ -310,6 +310,7 @@ body {
     min-height: 300px;
 }
 .team {
+    background-color: #f4f4fd;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -371,6 +372,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.team-list__link:hover,
+.team-list__link:focus {
+    background-color: #31d0aa;
+    transition: all 0.3s ease;
+}
 .team-list__icon,
 .social-media__icon {
     width: 16px;
@@ -380,6 +387,7 @@ body {
 
 .costumers {
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .costumers-title {
@@ -462,7 +470,7 @@ body {
 
 .footer-content__social-title {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     margin-bottom: 16px;
 }
 
@@ -508,7 +516,8 @@ body {
     margin-left: 24px;
 }
 
-.portfolio-filter__button:hover {
+.portfolio-filter__button:hover,
+.portfolio-filter__button:focus {
     background-color: #4d5ae5;
     color: #ffffff;
     padding: 12px 24px;
@@ -549,7 +558,7 @@ body {
 .portfolio-item {
     flex-basis: calc(25% - 24px);
     margin-left: 24px;
-    border-bottom: 2px solid #ffffff;
+    margin-bottom: 48px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }

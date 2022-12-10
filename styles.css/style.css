@@ -156,6 +156,16 @@ body {
     fill: #2e2f42;
 }
 
+.header-content__icon-item {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content__icon {
+    width: 60px;
+    height: 64px;
+}
+
 .header-contacts__item + .header-contacts__item {
     margin-left: 40px;
 }
@@ -320,7 +330,7 @@ body {
     justify-content: space-between;
 }
 .team-item {
-    border-bottom: 2px solid #ffffff;
+    background-color: #fff;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -555,13 +565,25 @@ body {
     flex-wrap: wrap;
     margin-top: 72px;
 }
+
+.portfolio-item__descr {
+    text-align: center;
+    padding: 0 52px 32px 16px;
+}
+
 .portfolio-item {
     flex-basis: calc(25% - 24px);
     margin-left: 24px;
     margin-bottom: 48px;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+    transition: all 0.3s ease;
 }
+
 .portfolio-item__link {
 }
 .portfolio-item__img {
@@ -572,14 +594,12 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding: 0 52px 0px 16px;
 }
-.portfolio-item__descr {
+.portfolio-item__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 0 52px 32px 16px;
 }
 /*Portfolio*/

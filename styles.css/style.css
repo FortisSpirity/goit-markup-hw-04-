@@ -159,6 +159,9 @@ body {
 .header-content__icon-item {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: #f4f4fd;
 }
 
 .header-content__icon {
@@ -567,14 +570,15 @@ body {
 }
 
 .portfolio-item__descr {
-    text-align: center;
+    text-align: left;
     padding: 0 52px 32px 16px;
 }
 
 .portfolio-item {
     flex-basis: calc(25% - 24px);
-    margin-left: 24px;
+    margin-left: 22px;
     margin-bottom: 48px;
+    border: 0.5px solid #f4f4fd;
 }
 
 .portfolio-item:hover,
